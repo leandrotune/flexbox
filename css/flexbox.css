@@ -1,0 +1,73 @@
+
+/*posicionamento do cabeçalho  */
+.cabecalhoPrincipal .container {
+    display: flex;                 /* propriedade para usar flexbox no elemento */
+    justify-content: space-between;/* colocar cada elemento em um canto da tela  */
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+}
+
+/* posicionamento do section */
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+/* posicionamento do rodape */
+.rodapePrincipal-patrocinadores   .container  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;                    /* propriedade para usar flexbox no elemento */
+    align-items: center;              /* alinhar itens ao centro */
+    justify-content: space-around;    /* distribuir o espaço ao redor do elementos  */
+    width: 75%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {/*o botão enviar estava com tamanho menor que o formulário */
+    display: flex;                     /*propriedade "flex" faz com que os elementos tenham o mesmo tamanho*/
+}
+
+/* posicionamento do main  */
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+}
+
+.videoSobre .container {
+    display: flex;
+   align-items: center;
+    
+}
+
+@media screen and (max-width: 480px){
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .conteudoPrincipal {
+        flex-direction: column;
+    }
+}
