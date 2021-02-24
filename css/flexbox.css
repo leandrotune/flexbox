@@ -67,7 +67,37 @@
         text-align: center;
     }
 
-    .conteudoPrincipal {
-        flex-direction: column;
+    .conteudoPrincipal-cursos {
+        display: flex;
     }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .conteudoPrincipal .container {
+        display: flex;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodapePrincipal-patrocinadores-list{
+        width: auto;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+
 }
