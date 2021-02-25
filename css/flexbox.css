@@ -52,10 +52,22 @@
 
 .videoSobre .container {
     display: flex;
-   align-items: center;
-    
+    flex-grow: 1;
 }
 
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+/* responsivo mobile */
 @media screen and (max-width: 480px){
     .cabecalhoPrincipal-nav {
         flex-direction: column;
@@ -98,6 +110,15 @@
 
     .rodapePrincipal-contatoForm-fieldset {
         justify-content: center;
+    }
+
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;                      /* mudar o posicionamento do elemento para primeiro item*/
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+        flex-shrink: 2;
     }
 
 }
